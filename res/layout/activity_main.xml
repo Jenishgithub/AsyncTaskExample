@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.asynctaskexample.MainActivity" >
+
+    <TextView
+        android:id="@+id/tvSleepTImeInMIlliseconds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="Sleep Time In Milliseconds:"
+        android:textSize="7pt" />
+
+    <EditText
+        android:id="@+id/etsleeptime"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tvSleepTImeInMIlliseconds"
+        android:layout_toRightOf="@+id/tvSleepTImeInMIlliseconds" />
+
+    <Button
+        android:id="@+id/btnRunAsyncTask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvSleepTImeInMIlliseconds"
+        android:layout_marginLeft="30dp"
+        android:text="Run Async task" />
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnRunAsyncTask"
+        android:layout_marginLeft="100dp"
+        android:padding="20dip"
+        android:text=" "
+        android:textSize="7pt" />
+
+</RelativeLayout>
